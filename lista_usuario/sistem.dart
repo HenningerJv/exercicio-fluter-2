@@ -57,9 +57,7 @@ class _UserListScreenState extends State<UserListScreen> {
               itemCount: users.length,
               itemBuilder: (context, index) {
                 final user = users[index];
-                final color = index % 2 == 0 
-                    ? Color(0xFFE3F2FD) 
-                    : Color(0xFFFFF9C4); 
+                final color = index % 2 == 0 ? Colors.grey[200] : Colors.white;
                 
                 return Container(
                   color: color,
